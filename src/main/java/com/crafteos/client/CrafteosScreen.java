@@ -132,7 +132,6 @@ public class CrafteosScreen extends Screen {
         return out;
     }
 
-    @Override
     private <T extends AbstractWidget> T addEditor(T widget) {
         editorWidgets.add(widget);
         return addRenderableWidget(widget);
@@ -161,6 +160,7 @@ public class CrafteosScreen extends Screen {
         return Component.literal("Mod: " + (ns.isEmpty() ? "todos" : ns));
     }
 
+    @Override
     protected void init() {
         lx = 8;
         ly = 24;
