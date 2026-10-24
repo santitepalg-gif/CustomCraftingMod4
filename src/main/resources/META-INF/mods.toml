@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+
+[[mods]]
+modId = "crafteos_reemplazo"
+version = "1.2.0"
+displayName = "Crafteos Reemplazo"
+description = '''
+Deshabilita los crafteos de cualquier objeto y los reemplaza por una receta en la estacion que elijas
+(mesa de crafteo, horno, alto horno, ahumador, fogata o mesa de mejora). Comando: /crafteos
+Nuevo: panel de recetas para activar/desactivar recetas de vanilla, mods y propias.
+Nuevo: boton "Mi inventario" para usar tus items custom (con NBT) como ingredientes y resultado.
+'''
+
+[[dependencies.crafteos_reemplazo]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.crafteos_reemplazo]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"

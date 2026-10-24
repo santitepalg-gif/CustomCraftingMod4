@@ -1,0 +1,20 @@
+Crafteos Reemplazo 1.2.0 (codigo fuente, Forge 1.20.1)
+
+Novedad 1.2.0: boton 'Panel de recetas >>' (arriba a la izquierda en /crafteos). Lista las recetas de
+vanilla, de todos los mods y las tuyas; puedes activar/desactivar cada una (boton ACTIVA/DESACTIVADA),
+filtrar por texto, estado o mod, y activar/desactivar todas las de un mod. Se guarda en el mundo.
+
+Novedad 1.1: boton "Mi inventario: SI/NO" en /crafteos. Con SI, el panel de la derecha
+muestra los items de tu inventario (con nombre, NBT, etc.) y los puedes usar como
+ingrediente o resultado. Con NO, todo funciona igual que antes.
+
+Como compilar:
+1. Copia gradlew, gradlew.bat y la carpeta gradle/ de un MDK de Forge 1.20.1 (47.x) a esta carpeta.
+2. Ejecuta: ./gradlew build   (necesita Java 17)
+3. El jar queda en build/libs/crafteos_reemplazo-1.2.0.jar
+
+Notas:
+- Las reglas viejas siguen funcionando (sin NBT).
+- Items del inventario: se ignora el desgaste (Damage) para que sirvan herramientas usadas.
+- Un resultado bloquea TODAS las recetas normales de ese item (tambien si es custom).
+- Protocolo de red 2: cliente y servidor deben tener la misma version del mod.
